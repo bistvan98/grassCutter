@@ -13,3 +13,18 @@ C:\Users\Istvan\Desktop\grass cutter\grassCutter\obj\Debug\net6.0\refint\grassCu
 C:\Users\Istvan\Desktop\grass cutter\grassCutter\obj\Debug\net6.0\grassCutter.pdb
 C:\Users\Istvan\Desktop\grass cutter\grassCutter\obj\Debug\net6.0\grassCutter.genruntimeconfig.cache
 C:\Users\Istvan\Desktop\grass cutter\grassCutter\obj\Debug\net6.0\ref\grassCutter.dll
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\bin\Debug\net6.0\grassCutter.exe
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\bin\Debug\net6.0\grassCutter.deps.json
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\bin\Debug\net6.0\grassCutter.runtimeconfig.json
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\bin\Debug\net6.0\grassCutter.dll
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\bin\Debug\net6.0\grassCutter.pdb
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\obj\Debug\net6.0\grassCutter.csproj.AssemblyReference.cache
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\obj\Debug\net6.0\grassCutter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\obj\Debug\net6.0\grassCutter.AssemblyInfoInputs.cache
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\obj\Debug\net6.0\grassCutter.AssemblyInfo.cs
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\obj\Debug\net6.0\grassCutter.csproj.CoreCompileInputs.cache
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\obj\Debug\net6.0\grassCutter.dll
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\obj\Debug\net6.0\refint\grassCutter.dll
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\obj\Debug\net6.0\grassCutter.pdb
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\obj\Debug\net6.0\grassCutter.genruntimeconfig.cache
+C:\Users\Istvan\Desktop\grassCutter\grassCutter\obj\Debug\net6.0\ref\grassCutter.dll
