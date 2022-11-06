@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace grassCutter
 {
@@ -193,10 +194,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Left down.
+                        // Bottom left.
                         else if (checkLeftDownGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Left Down " + i);
+                            Console.WriteLine("Bottom left " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveLeftDown(garden, x, y, noGrass, i);
@@ -205,10 +206,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Right down.
+                        // Bottom right.
                         else if (checkRightDownGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Right Down " + i);
+                            Console.WriteLine("Bottom right " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveRightDown(garden, x, y, noGrass, i);
@@ -217,10 +218,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Left up.
+                        // Top left.
                         else if (checkLeftUpGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Left Up " + i);
+                            Console.WriteLine("Top left " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveLeftUp(garden, x, y, noGrass, i);
@@ -229,10 +230,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Right up.
+                        // Top right.
                         else if (checkRightUpGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Right Up " + i);
+                            Console.WriteLine("Top right " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveRightUp(garden, x, y, noGrass, i);
@@ -327,10 +328,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Left down.
+                        // Bottom left.
                         else if (checkLeftDownGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Left Down " + i);
+                            Console.WriteLine("Bottom left " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveLeftDown(garden, x, y, noGrass, i);
@@ -339,10 +340,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Right down.
+                        // Bottom right.
                         else if (checkRightDownGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Right Down " + i);
+                            Console.WriteLine("Bottom right " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveRightDown(garden, x, y, noGrass, i);
@@ -351,10 +352,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Left up.
+                        // Top left.
                         else if (checkLeftUpGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Left Up " + i);
+                            Console.WriteLine("Top left " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveLeftUp(garden, x, y, noGrass, i);
@@ -363,10 +364,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Right up.
+                        // Top right.
                         else if (checkRightUpGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Right Up " + i);
+                            Console.WriteLine("Top right " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveRightUp(garden, x, y, noGrass, i);
@@ -460,10 +461,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Left down.
+                        // Bottom left.
                         else if (checkLeftDownGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Left Down " + i);
+                            Console.WriteLine("Bottom left " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveLeftDown(garden, x, y, noGrass, i);
@@ -472,10 +473,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Right down.
+                        // Bottom right.
                         else if (checkRightDownGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Right Down " + i);
+                            Console.WriteLine("Bottom right " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveRightDown(garden, x, y, noGrass, i);
@@ -484,10 +485,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Left up.
+                        // Top left.
                         else if (checkLeftUpGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Left Up " + i);
+                            Console.WriteLine("Top left " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveLeftUp(garden, x, y, noGrass, i);
@@ -496,10 +497,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Right up.
+                        // Top right.
                         else if (checkRightUpGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Right Up " + i);
+                            Console.WriteLine("Top right " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveRightUp(garden, x, y, noGrass, i);
@@ -592,10 +593,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Left down.
+                        // Bottom left..
                         else if (checkLeftDownGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Left Down " + i);
+                            Console.WriteLine("Bottom left " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveLeftDown(garden, x, y, noGrass, i);
@@ -604,10 +605,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Right down.
+                        // Bottom right.
                         else if (checkRightDownGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Right Down " + i);
+                            Console.WriteLine("Bottom right " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveRightDown(garden, x, y, noGrass, i);
@@ -616,10 +617,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Left up.
+                        // Top left.
                         else if (checkLeftUpGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Left Up " + i);
+                            Console.WriteLine("Top left " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveLeftUp(garden, x, y, noGrass, i);
@@ -628,10 +629,10 @@ namespace grassCutter
                             didTask = true;
                             break;
                         }
-                        // Right up.
+                        // Top right.
                         else if (checkRightUpGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Right Up " + i);
+                            Console.WriteLine("Top right " + i);
                             System.Threading.Thread.Sleep(150);
 
                             (garden, x, y, noGrass) = moveRightUp(garden, x, y, noGrass, i);
@@ -820,7 +821,7 @@ namespace grassCutter
             return false;
         }
 
-        // Checks, if the place left down to the grass cutter contains uncut grass or not.
+        // Checks, if the place bottom left to the grass cutter contains uncut grass or not.
         public static bool checkLeftDownGrass(char[,] garden, int x, int y, int radius)
         {
             switch (radius)
@@ -828,7 +829,7 @@ namespace grassCutter
                 // One radius check
                 case 1:
                     /*
-                     * If the part left down to the grass cutter contains uncut grass, and if theres a way there
+                     * If the part bottom left to the grass cutter contains uncut grass, and if theres a way there
                      * (the part down  or the part left to the grass cutter is an already cut grass, there can't be uncut grass, it was checked before this)
                      * then theres a new uncut grass part in reach and theres a way to it.
                      */
@@ -845,7 +846,7 @@ namespace grassCutter
                     if (garden[x, y - 1] != 'X' && garden[x + 1, y] != 'X')
                     {
                         /*
-                         * If the part in two radius left and down to the grass cutter aren't part of the fence, and the left down part in two radius is an uncut grass,
+                         * If the part in two radius left and down to the grass cutter aren't part of the fence, and the bottom left part in two radius is an uncut grass,
                          * then it can search for possible ways to it. The rest part can't be a fence.
                          */
                         if (garden[x, y - 2] != 'X' && garden[x + 2, y] != 'X' && garden[x + 2, y - 2] == 'G')
@@ -863,6 +864,28 @@ namespace grassCutter
                                 return true;
                             }
                         }
+                        else if (garden[x, y - 2] != 'X' && garden[x + 1, y - 2] == 'G')
+                        {
+                            if(
+                                (garden[x, y - 1] == '-' && garden[x, y - 2] == '-') ||
+                                (garden[x, y - 1] == '-' && garden[x + 1, y - 1] == '-') ||
+                                (garden[x + 1, y] == '-' && garden[x + 1, y - 1] == '-')
+                                )
+                            {
+                                return true;
+                            }
+                        }
+                        else if (garden[x + 2, y] != 'X' && garden[x + 2, y - 1] == 'G')
+                        {
+                            if (
+                                (garden[x + 1, y] == '-' && garden[x + 2, y] == '-') ||
+                                (garden[x, y - 1] == '-' && garden[x + 1, y - 1] == '-') ||
+                                (garden[x + 1, y] == '-' && garden[x + 1, y - 1] == '-')
+                                )
+                            {
+                                return true;
+                            }
+                        }
                     }
 
                     return false;
@@ -871,7 +894,7 @@ namespace grassCutter
             return false;
         }
 
-        // Checks, if the place right down to the grass cutter contains uncut grass or not.
+        // Checks, if the place bottom right to the grass cutter contains uncut grass or not.
         public static bool checkRightDownGrass(char[,] garden, int x, int y, int radius)
         {
             switch (radius)
@@ -903,6 +926,28 @@ namespace grassCutter
                                 return true;
                             }
                         }
+                        else if (garden[x, y + 2] != 'X' && garden[x + 1, y + 2] == 'G')
+                        {
+                            if (
+                                (garden[x, y + 1] == '-' && garden[x, y + 2] == '-') ||
+                                (garden[x, y + 1] == '-' && garden[x + 1, y + 1] == '-') ||
+                                (garden[x + 1, y] == '-' && garden[x + 1, y + 1] == '-')
+                                )
+                            {
+                                return true;
+                            }
+                        }
+                        else if (garden[x + 2, y] != 'X' && garden[x + 2, y + 1] == 'G')
+                        {
+                            if (
+                                (garden[x + 1, y] == '-' && garden[x + 2, y] == '-') ||
+                                (garden[x, y + 1] == '-' && garden[x + 1, y + 1] == '-') ||
+                                (garden[x + 1, y] == '-' && garden[x + 1, y + 1] == '-')
+                                )
+                            {
+                                return true;
+                            }
+                        }
                     }
 
                     return false;
@@ -911,7 +956,7 @@ namespace grassCutter
             return false;
         }
 
-        // Checks, if the place left up to the grass cutter contains uncut grass or not.
+        // Checks, if the place top left to the grass cutter contains uncut grass or not.
         public static bool checkLeftUpGrass(char[,] garden, int x, int y, int radius)
         {
             switch (radius)
@@ -943,6 +988,28 @@ namespace grassCutter
                                 return true;
                             }
                         }
+                        else if (garden[x, y - 2] != 'X' && garden[x - 1, y - 2] == 'G')
+                        {
+                            if (
+                                (garden[x, y - 1] == '-' && garden[x, y - 2] == '-') ||
+                                (garden[x, y - 1] == '-' && garden[x - 1, y - 1] == '-') ||
+                                (garden[x - 1, y] == '-' && garden[x - 1, y - 1] == '-')
+                                )
+                            {
+                                return true;
+                            }
+                        }
+                        else if (garden[x - 2, y] != 'X' && garden[x - 2, y - 1] == 'G')
+                        {
+                            if (
+                                (garden[x - 1, y] == '-' && garden[x - 2, y] == '-') ||
+                                (garden[x, y - 1] == '-' && garden[x - 1, y - 1] == '-') ||
+                                (garden[x - 1, y] == '-' && garden[x - 1, y - 1] == '-')
+                                )
+                            {
+                                return true;
+                            }
+                        }
                     }
 
                     return false;
@@ -951,7 +1018,7 @@ namespace grassCutter
             return false;
         }
 
-        // Checks, if the place right up to the grass cutter contains uncut grass or not.
+        // Checks, if the place top right to the grass cutter contains uncut grass or not.
         public static bool checkRightUpGrass(char[,] garden, int x, int y, int radius)
         {
             switch (radius)
@@ -978,6 +1045,28 @@ namespace grassCutter
                                 (garden[x - 1, y] == '-' && garden[x - 1, y + 1] == '-' && garden[x - 1, y + 2] == '-') ||
                                 (garden[x, y + 1] == '-' && garden[x - 1, y + 1] == '-' && garden[x - 1, y + 2] == '-') ||
                                 (garden[x, y + 1] == '-' && garden[x - 1, y + 1] == '-' && garden[x - 2, y + 1] == '-')
+                                )
+                            {
+                                return true;
+                            }
+                        }
+                        else if (garden[x, y + 2] != 'X' && garden[x - 1, y + 2] == 'G')
+                        {
+                            if (
+                                (garden[x, y + 1] == '-' && garden[x, y + 2] == '-') ||
+                                (garden[x, y + 1] == '-' && garden[x - 1, y + 1] == '-') ||
+                                (garden[x - 1, y] == '-' && garden[x - 1, y + 1] == '-')
+                                )
+                            {
+                                return true;
+                            }
+                        }
+                        else if (garden[x - 2, y] != 'X' && garden[x - 2, y + 1] == 'G')
+                        {
+                            if (
+                                (garden[x - 1, y] == '-' && garden[x - 2, y] == '-') ||
+                                (garden[x, y + 1] == '-' && garden[x - 1, y + 1] == '-') ||
+                                (garden[x - 1, y] == '-' && garden[x - 1, y + 1] == '-')
                                 )
                             {
                                 return true;
@@ -1046,10 +1135,8 @@ namespace grassCutter
         #region "Moving The Grass Cutter"
 
         /*
-         * This part of the code contains the functions that moves the grass cutter. The logic behind these functions are the same,
-         * the different functions only moves the grass cutter to an other direction (for example one moves to the left and the other moves to the right).
-         * From the fifth function, the moving part is a little different, because the functions checks every possible way to the uncut grass,
-         * because there can be paths, that are blocked by some obstacles. The rest functions after the fifth works with the same logic as the fifth. Comments will be only at the first and the fifth function.
+         * This part of the code contains the functions that calls the function that moves the grass cutter with the correct input or moves the grass cutter if it only moves one area unit.
+         * The logic behind these functions are the same, comments will be only at the first and the fifth function.
         */
 
         // Moves the grass cutter up.
@@ -1079,13 +1166,8 @@ namespace grassCutter
 
                 // Two radius move.
                 case 2:
-                    // Calling the move up by one area unit function. There are no obstacle or fence, it was checked before the moving.
-                    (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                    drawGarden(garden); // Drawing the garden on the console to see the moves between the starting and final position.
-
-                    System.Threading.Thread.Sleep(500);
-                    (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1); // Moving up by one again.
-                    drawGarden(garden); // Drawing again to get the fresh status of the garden.
+                    char[] way = new char[2] { 'x', 'x' }; // To move up by two area unit, the grass cutter need to change it's row coordinate two times.
+                    (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, 2); // Calling the mover function.
 
                     return (garden, x, y, noGrass);
             }
@@ -1117,12 +1199,8 @@ namespace grassCutter
 
                 // Two radius move.
                 case 2:
-                    (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                    drawGarden(garden);
-
-                    System.Threading.Thread.Sleep(150);
-                    (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                    drawGarden(garden);
+                    char[] way = new char[2] { 'x', 'x' };
+                    (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, 2);
 
                     return (garden, x, y, noGrass);
             }
@@ -1154,12 +1232,8 @@ namespace grassCutter
                     
                 // Two radius move.
                 case 2:
-                    (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                    drawGarden(garden);
-
-                    System.Threading.Thread.Sleep(500);
-                    (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                    drawGarden(garden);
+                    char[] way = new char[2] { 'y', 'y' };
+                    (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, 2);
 
                     return (garden, x, y, noGrass);
             }
@@ -1191,12 +1265,8 @@ namespace grassCutter
 
                 // Two radius move.
                 case 2:
-                    (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                    drawGarden(garden);
-
-                    System.Threading.Thread.Sleep(500);
-                    (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                    drawGarden(garden);
+                    char[] way = new char[2] { 'y', 'y' };
+                    (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, 2);
 
                     return (garden, x, y, noGrass);
             }
@@ -1204,9 +1274,12 @@ namespace grassCutter
             return (garden, x, y, noGrass);
         }
 
-        // Moves the grass cutter to rigt down.
+        // Moves the grass cutter to bottom right.
         public static (char[,], int, int, int) moveRightDown(char[,] garden, int x, int y, int noGrass, int radius)
         {
+            noGrass = 0;
+            int length;
+
             switch(radius)
             {
                 // One radius move.
@@ -1214,615 +1287,544 @@ namespace grassCutter
                     Console.WriteLine("Right down 1 runs."); // Writes on the console that it found an uncut grass at the right down direction.
                     System.Threading.Thread.Sleep(500);
 
+                    length = 2;
+
                     // Checks if theres a free way to the right.
                     if (checkRightGrass(garden, x, y, 1) || checkRightFinishedGrass(garden, x, y))
                     {
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1); // If there's a clear way to the right, then it will move that way first.
-                        drawGarden(garden); // Draws the current status of the garden on the console to follow the moves.
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1); // Moves down where's the uncut grass. It was checked before the move function.
+                        char[] way = new char[2] { 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
                     }
                     // If the right way is blocked then it will check the part down to the grass cutter. It should be clear.
                     else if (checkDownGrass(garden, x, y, 1) || checkDownFinishedGrass(garden, x, y))
                     {
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1); // Moves to down.
-                        drawGarden(garden); // Draws the fresh garden status on the console.
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1); // Movves right where's the uncut grass is.
+                        char[] way = new char[2] { 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
                     }
 
-                    return (garden, x, y, noGrass);
+                    break;
 
                 // Two radius move.
                 case 2:
                     Console.WriteLine("Right down 2 runs.");
                     System.Threading.Thread.Sleep(500);
 
+                    length = 4;
+
+                    // There are five different paths to reach the uncut grass at the top corner, if it finds one free path, it will call the mover function with the correct coordinate changeing order.
                     if (garden[x, y + 1] == '-' && garden[x, y + 2] == '-' && garden[x + 1, y + 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'y', 'y', 'x', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
                     }
                     else if(garden[x + 1, y] == '-' && garden[x + 2, y] == '-' && garden[x + 2, y + 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'x', 'y', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
                     }
                     else if(garden[x + 1, y] == '-' && garden[x + 1, y + 1] == '-' && garden[x + 2, y + 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'y', 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
                     }
                     else if(garden[x + 1, y] == '-' && garden[x + 1, y + 1] == '-' && garden[x + 1, y + 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'y', 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
                     }
                     else if(garden[x, y + 1] == '-' && garden[x + 1, y + 1] == '-' && garden[x + 1, y + 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'y', 'x', 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
                     }
                     else if(garden[x, y + 1] == '-' && garden[x + 1, y + 1] == '-' && garden[x + 2, y + 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
+                        char[] way = new char[4] { 'y', 'x', 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
+                    }
+                    // There are two more possible place for an uncut grass next to the top corner with three - three possible ways
+                    else if (garden[x, y + 2] != 'X' && garden[x + 1, y + 2] == 'G')
+                    {
+                        length = 3;
 
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
+                        if (garden[x, y + 1] == '-' && garden[x, y + 2] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'y', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
+                        }
+                        else if(garden[x, y + 1] == '-' && garden[x + 1, y + 1] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'x', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
+                        }
+                        else if(garden[x + 1, y] == '-' && garden[x + 1, y + 1] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'y', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
+                        }
+                    }
+                    else if (garden[x + 2, y] != 'X' && garden[x + 2, y + 1] == 'G')
+                    {
+                        length = 3;
 
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        if (garden[x + 1, y] == '-' && garden[x + 2, y] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'x', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
+                        }
+                        else if(garden[x, y + 1] == '-' && garden[x + 1, y + 1] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'x', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
+                        }
+                        else if(garden[x + 1, y] == '-' && garden[x + 1, y + 1] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'y', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 1, length);
+                        }
                     }
 
-                    return (garden, x, y, noGrass);
+                    break;
             }
 
             return (garden, x, y, noGrass);
         }
 
-        // Moves the grass cutter to right up.
+        // Moves the grass cutter to top right.
         public static (char[,], int, int, int) moveRightUp(char[,] garden, int x, int y, int noGrass, int radius)
         {
+            noGrass = 0;
+            int length;
+
             switch (radius)
             {
                 // One radius move.
                 case 1:
-                    Console.WriteLine("Right up 1 runs.");
+                    Console.WriteLine("Top right 1 runs.");
                     System.Threading.Thread.Sleep(500);
+
+                    length = 2;
 
                     if (checkRightGrass(garden, x, y, 1) || checkRightFinishedGrass(garden, x, y))
                     {
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
+                        char[] way = new char[2] { 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
                     }
                     else if (checkUpGrass(garden, x, y, 1) || checkUpFinishedGrass(garden, x, y))
                     {
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
+                        char[] way = new char[2] { 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
                     }
 
-                    return (garden, x, y, noGrass);
+                    break;
 
                 // Two radius move.
                 case 2:
-                    Console.WriteLine("Right up 2 runs.");
+                    Console.WriteLine("Top right 2 runs.");
                     System.Threading.Thread.Sleep(500);
+
+                    length = 4;
 
                     if (garden[x, y + 1] == '-' && garden[x, y + 2] == '-' && garden[x - 1, y + 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'y', 'y', 'x', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
                     }
                     else if (garden[x - 1, y] == '-' && garden[x - 2, y] == '-' && garden[x - 2, y + 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'x', 'y', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
                     }
                     else if (garden[x - 1, y] == '-' && garden[x - 1, y + 1] == '-' && garden[x - 2, y + 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'y', 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
                     }
                     else if (garden[x - 1, y] == '-' && garden[x - 1, y + 1] == '-' && garden[x - 1, y + 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'y', 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
                     }
                     else if (garden[x, y + 1] == '-' && garden[x - 1, y + 1] == '-' && garden[x - 1, y + 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'y', 'x', 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
                     }
                     else if (garden[x, y + 1] == '-' && garden[x - 1, y + 1] == '-' && garden[x - 2, y + 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
+                        char[] way = new char[4] { 'y', 'x', 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
+                    }
+                    else if (garden[x - 1, y + 2] == 'G')
+                    {
+                        length = 3;
 
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
+                        if (garden[x, y + 1] == '-' && garden[x, y + 2] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'y', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
+                        }
+                        else if(garden[x, y + 1] == '-' && garden[x - 1, y + 1] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'x', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
+                        }
+                        else if(garden[x - 1, y] == '-' && garden[x - 1, y + 1] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'y', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
+                        }
+                    }
+                    else if (garden[x - 2, y + 1] == 'G')
+                    {
+                        length = 3;
 
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveRight(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        if (garden[x - 1, y] == '-' && garden[x - 2, y] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'x', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
+                        }
+                        else if(garden[x, y + 1] == '-' && garden[x - 1, y + 1] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'x', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
+                        }
+                        else if(garden[x - 1, y] == '-' && garden[x - 1, y + 1] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'y', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 0, length);
+                        }
                     }
 
-                    return (garden, x, y, noGrass);
+                    break;
             }
 
             return (garden, x, y, noGrass);
         }
 
-        // Moves the grass cutter to left down.
+        // Moves the grass cutter to bottom left.
         public static (char[,], int, int, int) moveLeftDown(char[,] garden, int x, int y, int noGrass, int radius)
         {
+            noGrass = 0;
+            int length;
+
             switch(radius)
             {
                 // One radius move.
                 case 1:
-                    Console.WriteLine("Left down 1 runs.");
+                    Console.WriteLine("Bottom left 1 runs.");
                     System.Threading.Thread.Sleep(500);
+
+                    length = 2;
 
                     if (checkLeftGrass(garden, x, y, 1) || checkLeftFinishedGrass(garden, x, y))
                     {
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
+                        char[] way = new char[2] { 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
                     }
                     else
                     {
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
+                        char[] way = new char[2] { 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
                     }
 
-                    return (garden, x, y, noGrass);
+                    break;
 
                 // Two radius move.
                 case 2:
-                    Console.WriteLine("Left down 2 runs.");
+                    Console.WriteLine("Bottom left 2 runs.");
                     System.Threading.Thread.Sleep(500);
+
+                    length = 4;
 
                     if (garden[x, y - 1] == '-' && garden[x, y - 2] == '-' && garden[x + 1, y - 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'y', 'y', 'x', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
                     }
                     else if (garden[x + 1, y] == '-' && garden[x + 2, y] == '-' && garden[x + 2, y - 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'x', 'y', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
                     }
                     else if (garden[x + 1, y] == '-' && garden[x + 1, y - 1] == '-' && garden[x + 2, y - 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'y', 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
                     }
                     else if (garden[x + 1, y] == '-' && garden[x + 1, y - 1] == '-' && garden[x + 1, y - 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'y', 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
                     }
                     else if (garden[x, y - 1] == '-' && garden[x + 1, y - 1] == '-' && garden[x + 1, y - 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'y', 'x', 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
                     }
                     else if (garden[x, y - 1] == '-' && garden[x + 1, y - 1] == '-' && garden[x + 2, y - 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
+                        char[] way = new char[4] { 'y', 'x', 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
+                    }
+                    else if (garden[x, y - 2] != 'X' && garden[x + 1, y - 2] == 'G')
+                    {
+                        length = 3;
 
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
+                        if (garden[x, y - 1] == '-' && garden[x, y - 2] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'y', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
+                        }
+                        else if(garden[x, y - 1] == '-' && garden[x + 1, y - 1] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'x', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
+                        }
+                        else if(garden[x + 1, y] == '-' && garden[x + 1, y - 1] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'y', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
+                        }
+                    }
+                    else if (garden[x + 2, y] != 'X' && garden[x + 2, y - 1] == 'G')
+                    {
+                        length = 3;
 
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveDown(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        if (garden[x + 1, y] == '-' && garden[x + 2, y] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'x', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
+                        }
+                        else if(garden[x, y - 1] == '-' && garden[x + 1, y - 1] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'x', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
+                        }
+                        else if(garden[x + 1, y] == '-' && garden[x + 1, y - 1] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'y', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 3, length);
+                        }
                     }
 
-                    return (garden, x, y, noGrass);
+                    break;
             }
 
             return (garden, x, y, noGrass);
         }
 
-        // Moves the grass cutter to left up.
+        // Moves the grass cutter to top left.
         public static (char[,], int, int, int) moveLeftUp(char[,] garden, int x, int y, int noGrass, int radius)
         {
+            noGrass = 0;
+            int length;
+
             switch (radius)
             {
                 // One radius move.
                 case 1:
-                    Console.WriteLine("Left up 1 runs.");
+                    Console.WriteLine("Top left 1 runs.");
                     System.Threading.Thread.Sleep(500);
+
+                    length = 2;
 
                     if (checkLeftGrass(garden, x, y, 1) || checkLeftFinishedGrass(garden, x, y))
                     {
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
+                        char[] way = new char[2] { 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
                     }
                     else
                     {
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
+                        char[] way = new char[2] { 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
                     }
 
-                    return (garden, x, y, noGrass);
+                    break;
 
                 // Two radius move.
                 case 2:
-                    Console.WriteLine("Left up 2 runs.");
+                    Console.WriteLine("Top left 2 runs.");
                     System.Threading.Thread.Sleep(500);
+
+                    length = 4;
 
                     if (garden[x, y - 1] == '-' && garden[x, y - 2] == '-' && garden[x - 1, y - 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-                        System.Threading.Thread.Sleep(500);
-
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-                        System.Threading.Thread.Sleep(500);
-
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-                        System.Threading.Thread.Sleep(500);
-
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'y', 'y', 'x', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
                     }
                     else if (garden[x - 1, y] == '-' && garden[x - 2, y] == '-' && garden[x - 2, y - 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'x', 'y', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
                     }
                     else if (garden[x - 1, y] == '-' && garden[x - 1, y - 1] == '-' && garden[x - 2, y - 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'y', 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
                     }
                     else if (garden[x - 1, y] == '-' && garden[x - 1, y - 1] == '-' && garden[x - 1, y - 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'x', 'y', 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
                     }
                     else if (garden[x, y - 1] == '-' && garden[x - 1, y - 1] == '-' && garden[x - 1, y - 2] == '-')
                     {
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'y', 'x', 'y', 'x' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
                     }
                     else if (garden[x, y - 1] == '-' && garden[x - 1, y - 1] == '-' && garden[x - 2, y - 1] == '-')
                     {
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveUp(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        System.Threading.Thread.Sleep(500);
-                        (garden, x, y, noGrass) = moveLeft(garden, x, y, noGrass, 1);
-                        drawGarden(garden);
-
-                        return (garden, x, y, noGrass);
+                        char[] way = new char[4] { 'y', 'x', 'x', 'y' };
+                        (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
                     }
-                    return (garden,x, y, noGrass);
+                    else if (garden[x, y - 2] != 'X' && garden[x - 1, y - 2] == 'G')
+                    {
+                        length = 3;
+
+                        if (garden[x, y - 1] == '-' && garden[x, y - 2] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'y', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
+                        }
+                        else if(garden[x, y - 1] == '-' && garden[x - 1, y - 1] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'x', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
+                        }
+                        else if(garden[x - 1, y] == '-' && garden[x - 1, y - 1] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'y', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
+                        }
+                    }
+                    else if (garden[x - 2, y] != 'X' && garden[x - 2, y - 1] == 'G')
+                    {
+                        length = 3;
+
+                        if (garden[x - 1, y] == '-' && garden[x - 2, y] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'x', 'y' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
+                        }
+                        else if(garden[x, y - 1] == '-' && garden[x - 1, y - 1] == '-')
+                        {
+                            char[] way = new char[3] { 'y', 'x', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
+                        }
+                        else if(garden[x - 1, y] == '-' && garden[x - 1, y - 1] == '-')
+                        {
+                            char[] way = new char[3] { 'x', 'y', 'x' };
+                            (garden, x, y) = moveGrassCutter(garden, x, y, way, 2, length);
+                        }
+                    }
+
+                    break;
             }
 
                    return (garden, x, y, noGrass);
+        }
+
+        // Function that moves the grass cutter.
+        public static (char[,], int, int) moveGrassCutter(char[,] garden, int x, int y, char[] way, int direction, int length)
+        {
+            switch(direction)
+            {
+                // Top right.
+                case 0:
+                    for (int i = 0; i < length; i++)
+                    {
+                        if (way[i] == 'x')
+                        {
+                            garden[x, y] = '-';
+                            x--;
+                            garden[x, y] = '^';
+                            drawGarden(garden);
+                            System.Threading.Thread.Sleep(150);
+                        }
+                        else
+                        {
+                            garden[x, y] = '-';
+                            y++;
+                            garden[x, y] = '>';
+                            drawGarden(garden);
+                            System.Threading.Thread.Sleep(150);
+                        }
+                    }
+                    break;
+
+                // Right down.
+                case 1:
+                    for (int i = 0; i < length; i++)
+                    {
+                        if (way[i] == 'x')
+                        {
+                            garden[x, y] = '-';
+                            x++;
+                            garden[x, y] = 'V';
+                            drawGarden(garden);
+                            System.Threading.Thread.Sleep(150);
+                        }
+                        else
+                        {
+                            garden[x, y] = '-';
+                            y++;
+                            garden[x, y] = '>';
+                            drawGarden(garden);
+                            System.Threading.Thread.Sleep(150);
+                        }
+                    }
+                    break;
+
+                // Top left.
+                case 2:
+                    for (int i = 0; i < length; i++)
+                    {
+                        if (way[i] == 'x')
+                        {
+                            garden[x, y] = '-';
+                            x--;
+                            garden[x, y] = '^';
+                            drawGarden(garden);
+                            System.Threading.Thread.Sleep(150);
+                        }
+                        else
+                        {
+                            garden[x, y] = '-';
+                            y--;
+                            garden[x, y] = '<';
+                            drawGarden(garden);
+                            System.Threading.Thread.Sleep(150);
+                        }
+                    }
+                    break;
+
+                // Bottom left.
+                case 3:
+                    for (int i = 0; i < length; i++)
+                    {
+                        if (way[i] == 'x')
+                        {
+                            garden[x, y] = '-';
+                            x++;
+                            garden[x, y] = 'V';
+                            drawGarden(garden);
+                            System.Threading.Thread.Sleep(150);
+                        }
+                        else
+                        {
+                            garden[x, y] = '-';
+                            y--;
+                            garden[x, y] = '<';
+                            drawGarden(garden);
+                            System.Threading.Thread.Sleep(150);
+                        }
+                    }
+                    break;
+            }
+
+            return (garden, x, y);
         }
 
         #endregion
