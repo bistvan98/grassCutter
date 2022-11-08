@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace oopGrassCutter
 {
-    internal class gardenMap
+    internal class GardenMap
     {
         public static char[,] garden { get; set; } = new char[10, 10]; // The garden will be a 10x10 sized character matrix.
 

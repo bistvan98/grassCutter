@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace oopGrassCutter
 {
-    internal class moveGrassCutter
+    internal class MoveGrassCutter
     {
         /*
          * This part of the code contains the functions that calls the function that moves the grass cutter with the correct input or moves the grass cutter if it only moves one area unit.
@@ -164,13 +164,13 @@ namespace oopGrassCutter
                     length = 2;
 
                     // Checks if theres a free way to the right.
-                    if (checkingEnvironment.checkRightGrass(garden, x, y, 1) || checkingEnvironment.checkRightFinishedGrass(garden, x, y))
+                    if (CheckingEnvironment.checkRightGrass(garden, x, y, 1) || CheckingEnvironment.checkRightFinishedGrass(garden, x, y))
                     {
                         char[] way = new char[2] { 'y', 'x' };
                         (garden, x, y) = moveCutter(garden, x, y, way, 1, length);
                     }
                     // If the right way is blocked then it will check the part down to the grass cutter. It should be clear.
-                    else if (checkingEnvironment.checkDownGrass(garden, x, y, 1) || checkingEnvironment.checkDownFinishedGrass(garden, x, y))
+                    else if (CheckingEnvironment.checkDownGrass(garden, x, y, 1) || CheckingEnvironment.checkDownFinishedGrass(garden, x, y))
                     {
                         char[] way = new char[2] { 'x', 'y' };
                         (garden, x, y) = moveCutter(garden, x, y, way, 1, length);
@@ -279,12 +279,12 @@ namespace oopGrassCutter
 
                     length = 2;
 
-                    if (checkingEnvironment.checkRightGrass(garden, x, y, 1) || checkingEnvironment.checkRightFinishedGrass(garden, x, y))
+                    if (CheckingEnvironment.checkRightGrass(garden, x, y, 1) || CheckingEnvironment.checkRightFinishedGrass(garden, x, y))
                     {
                         char[] way = new char[2] { 'y', 'x' };
                         (garden, x, y) = moveCutter(garden, x, y, way, 0, length);
                     }
-                    else if (checkingEnvironment.checkUpGrass(garden, x, y, 1) || checkingEnvironment.checkUpFinishedGrass(garden, x, y))
+                    else if (CheckingEnvironment.checkUpGrass(garden, x, y, 1) || CheckingEnvironment.checkUpFinishedGrass(garden, x, y))
                     {
                         char[] way = new char[2] { 'x', 'y' };
                         (garden, x, y) = moveCutter(garden, x, y, way, 0, length);
@@ -391,7 +391,7 @@ namespace oopGrassCutter
 
                     length = 2;
 
-                    if (checkingEnvironment.checkLeftGrass(garden, x, y, 1) || checkingEnvironment.checkLeftFinishedGrass(garden, x, y))
+                    if (CheckingEnvironment.checkLeftGrass(garden, x, y, 1) || CheckingEnvironment.checkLeftFinishedGrass(garden, x, y))
                     {
                         char[] way = new char[2] { 'y', 'x' };
                         (garden, x, y) = moveCutter(garden, x, y, way, 3, length);
@@ -503,7 +503,7 @@ namespace oopGrassCutter
 
                     length = 2;
 
-                    if (checkingEnvironment.checkLeftGrass(garden, x, y, 1) || checkingEnvironment.checkLeftFinishedGrass(garden, x, y))
+                    if (CheckingEnvironment.checkLeftGrass(garden, x, y, 1) || CheckingEnvironment.checkLeftFinishedGrass(garden, x, y))
                     {
                         char[] way = new char[2] { 'y', 'x' };
                         (garden, x, y) = moveCutter(garden, x, y, way, 2, length);
@@ -614,7 +614,7 @@ namespace oopGrassCutter
                             garden[x, y] = '-';
                             x--;
                             garden[x, y] = '^';
-                            gardenMap.drawGarden(garden);
+                            GardenMap.drawGarden(garden);
                             System.Threading.Thread.Sleep(150);
                         }
                         else
@@ -622,7 +622,7 @@ namespace oopGrassCutter
                             garden[x, y] = '-';
                             y++;
                             garden[x, y] = '>';
-                            gardenMap.drawGarden(garden);
+                            GardenMap.drawGarden(garden);
                             System.Threading.Thread.Sleep(150);
                         }
                     }
@@ -637,7 +637,7 @@ namespace oopGrassCutter
                             garden[x, y] = '-';
                             x++;
                             garden[x, y] = 'V';
-                            gardenMap.drawGarden(garden);
+                            GardenMap.drawGarden(garden);
                             System.Threading.Thread.Sleep(150);
                         }
                         else
@@ -645,7 +645,7 @@ namespace oopGrassCutter
                             garden[x, y] = '-';
                             y++;
                             garden[x, y] = '>';
-                            gardenMap.drawGarden(garden);
+                            GardenMap.drawGarden(garden);
                             System.Threading.Thread.Sleep(150);
                         }
                     }
@@ -660,7 +660,7 @@ namespace oopGrassCutter
                             garden[x, y] = '-';
                             x--;
                             garden[x, y] = '^';
-                            gardenMap.drawGarden(garden);
+                            GardenMap.drawGarden(garden);
                             System.Threading.Thread.Sleep(150);
                         }
                         else
@@ -668,7 +668,7 @@ namespace oopGrassCutter
                             garden[x, y] = '-';
                             y--;
                             garden[x, y] = '<';
-                            gardenMap.drawGarden(garden);
+                            GardenMap.drawGarden(garden);
                             System.Threading.Thread.Sleep(150);
                         }
                     }
@@ -683,7 +683,7 @@ namespace oopGrassCutter
                             garden[x, y] = '-';
                             x++;
                             garden[x, y] = 'V';
-                            gardenMap.drawGarden(garden);
+                            GardenMap.drawGarden(garden);
                             System.Threading.Thread.Sleep(150);
                         }
                         else
@@ -691,7 +691,7 @@ namespace oopGrassCutter
                             garden[x, y] = '-';
                             y--;
                             garden[x, y] = '<';
-                            gardenMap.drawGarden(garden);
+                            GardenMap.drawGarden(garden);
                             System.Threading.Thread.Sleep(150);
                         }
                     }

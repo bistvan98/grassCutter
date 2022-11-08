@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace oopGrassCutter
 {
-    internal class grassCutter
+    internal class GrassCutter
     {
         public int x; // The grass cutters current x coordinate.
         public int y; // The grass cutters current y coordinate.
@@ -16,7 +16,7 @@ namespace oopGrassCutter
         public int routeChangeNumber; // A variable to count the forced preferred way changes.
         public int way; // Variable that defines the preferred way.
 
-        public grassCutter(int x, int y, int noGrass, int routeChangeNumber, int way)
+        public GrassCutter(int x, int y, int noGrass, int routeChangeNumber, int way)
         {
             this.x = x;
             this.y = y;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace oopGrassCutter
 {
-    internal class checkingEnvironment
+    internal class CheckingEnvironment
     {
         /*
          * This part of the code contains the grass cutter environment checker functions. The logic behind these functions are the same,
