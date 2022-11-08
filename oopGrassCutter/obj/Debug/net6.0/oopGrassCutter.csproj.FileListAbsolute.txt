@@ -1,0 +1,15 @@
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\bin\Debug\net6.0\oopGrassCutter.exe
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\bin\Debug\net6.0\oopGrassCutter.deps.json
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\bin\Debug\net6.0\oopGrassCutter.runtimeconfig.json
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\bin\Debug\net6.0\oopGrassCutter.dll
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\bin\Debug\net6.0\oopGrassCutter.pdb
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\obj\Debug\net6.0\oopGrassCutter.csproj.AssemblyReference.cache
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\obj\Debug\net6.0\oopGrassCutter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\obj\Debug\net6.0\oopGrassCutter.AssemblyInfoInputs.cache
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\obj\Debug\net6.0\oopGrassCutter.AssemblyInfo.cs
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\obj\Debug\net6.0\oopGrassCutter.csproj.CoreCompileInputs.cache
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\obj\Debug\net6.0\oopGrassCutter.dll
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\obj\Debug\net6.0\refint\oopGrassCutter.dll
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\obj\Debug\net6.0\oopGrassCutter.pdb
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\obj\Debug\net6.0\oopGrassCutter.genruntimeconfig.cache
+C:\Users\Istvan\Desktop\oopGrassCutter\oopGrassCutter\obj\Debug\net6.0\ref\oopGrassCutter.dll
