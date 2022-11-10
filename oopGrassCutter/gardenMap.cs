@@ -8,7 +8,7 @@ namespace oopGrassCutter
 {
     internal class GardenMap
     {
-        public static char[,] garden { get; set; } = new char[10, 10]; // The garden will be a 10x10 sized character matrix.
+        public static char[,] garden { get; set; } = new char[10, 10];
 
         // Fills the matrix simulating the garden with elements.
         public (int, int) fillGarden()

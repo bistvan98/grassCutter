@@ -8,11 +8,6 @@ namespace oopGrassCutter
 {
     internal class MoveGrassCutter
     {
-        /*
-         * This part of the code contains the functions that calls the function that moves the grass cutter with the correct input or moves the grass cutter if it only moves one area unit.
-         * The logic behind these functions are the same, comments will be only at the first and the fifth function.
-        */
-
         // Moves the grass cutter up.
         public static (char[,], int, int, int) moveUp(char[,] garden, int x, int y, int noGrass, int radius)
         {
@@ -20,30 +15,72 @@ namespace oopGrassCutter
             {
                 // One radius move.
                 case 1:
-                    // If the part where the grass cutter would move is an already cut grass part, then the noGrass variables value will be increased by one.
                     if (garden[x - 1, y] == '-')
                     {
                         noGrass++;
                     }
-                    // If the next part contains uncut grass, then the noGrass variables value will be zero (it breaks the "can't find any uncut grass" chain).
                     else if (garden[x - 1, y] == 'G')
                     {
                         noGrass = 0;
                     }
 
-                    // Changes the part where the grass cutter were, and the part where it will be.
                     garden[x, y] = '-';
                     x--;
                     garden[x, y] = '^';
 
-                    return (garden, x, y, noGrass);
+                    break;
 
                 // Two radius move.
                 case 2:
-                    char[] way = new char[2] { 'x', 'x' }; // To move up by two area unit, the grass cutter need to change it's row coordinate two times.
-                    (garden, x, y) = moveCutter(garden, x, y, way, 0, 2); // Calling the mover function.
+                    if (garden[x - 1, y] == '-')
+                    {
+                        char[] way = new char[2] { 'x', 'x' };
+                        (garden, x, y) = moveCutter(garden, x, y, way, 0, 2);
+                    }
+                    else if (garden[x, y - 1] == '-' && garden[x - 1, y - 1] == '-' && garden[x - 2, y - 1] == '-')
+                    {
+                        garden[x, y] = '-';
+                        y--;
+                        garden[x, y] = '<';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x--;
+                        garden[x, y] = '^';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x--;
+                        garden[x, y] = '^';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y++;
+                        garden[x, y] = '>';
+                    }
+                    else if (garden[x, y + 1] == '-' && garden[x - 1, y + 1] == '-' && garden[x - 2, y + 1] == '-')
+                    {
+                        garden[x, y] = '-';
+                        y++;
+                        garden[x, y] = '>';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x--;
+                        garden[x, y] = '^';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x--;
+                        garden[x, y] = '^';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y--;
+                        garden[x, y] = '<';
+                    }
 
-                    return (garden, x, y, noGrass);
+                    break;
             }
 
             return (garden, x, y, noGrass);
@@ -69,14 +106,59 @@ namespace oopGrassCutter
                     x++;
                     garden[x, y] = 'V';
 
-                    return (garden, x, y, noGrass);
+                    break;
 
                 // Two radius move.
                 case 2:
-                    char[] way = new char[2] { 'x', 'x' };
-                    (garden, x, y) = moveCutter(garden, x, y, way, 1, 2);
+                    if (garden[x + 1, y] == '-')
+                    {
+                        char[] way = new char[2] { 'x', 'x' };
+                        (garden, x, y) = moveCutter(garden, x, y, way, 1, 2);
+                    }
+                    else if (garden[x, y - 1] == '-' && garden[x + 1, y - 1] == '-' && garden[x + 2, y - 1] == '-')
+                    {
+                        garden[x, y] = '-';
+                        y--;
+                        garden[x, y] = '<';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x++;
+                        garden[x, y] = 'V';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x++;
+                        garden[x, y] = 'V';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y++;
+                        garden[x, y] = '>';
+                    }
+                    else if (garden[x, y + 1] == '-' && garden[x + 1, y + 1] == '-' && garden[x + 2, y + 1] == '-')
+                    {
+                        garden[x, y] = '-';
+                        y++;
+                        garden[x, y] = '>';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x++;
+                        garden[x, y] = 'V';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x++;
+                        garden[x, y] = 'V';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y--;
+                        garden[x, y] = '<';
+                    }
 
-                    return (garden, x, y, noGrass);
+                    break;
             }
 
             return (garden, x, y, noGrass);
@@ -102,14 +184,59 @@ namespace oopGrassCutter
                     y--;
                     garden[x, y] = '<';
 
-                    return (garden, x, y, noGrass);
+                    break;
 
                 // Two radius move.
                 case 2:
-                    char[] way = new char[2] { 'y', 'y' };
-                    (garden, x, y) = moveCutter(garden, x, y, way, 2, 2);
+                    if (garden[x, y - 1] == '-')
+                    {
+                        char[] way = new char[2] { 'y', 'y' };
+                        (garden, x, y) = moveCutter(garden, x, y, way, 2, 2);
+                    }
+                    else if (garden[x - 1, y] == '-' && garden[x - 1, y - 1] == '-' && garden[x - 1, y - 2] == '-')
+                    {
+                        garden[x, y] = '-';
+                        x--;
+                        garden[x, y] = '^';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y--;
+                        garden[x, y] = '<';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y--;
+                        garden[x, y] = '<';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x++;
+                        garden[x, y] = 'V';
+                    }
+                    else if(garden[x + 1, y] == '-' && garden[x + 1, y - 1] == '-' && garden[x + 1, y - 2] == '-')
+                    {
+                        garden[x, y] = '-';
+                        x++;
+                        garden[x, y] = 'V';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y--;
+                        garden[x, y] = '<';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y--;
+                        garden[x, y] = '<';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x--;
+                        garden[x, y] = '^';
+                    }
 
-                    return (garden, x, y, noGrass);
+                    break;
             }
 
             return (garden, x, y, noGrass);
@@ -135,14 +262,59 @@ namespace oopGrassCutter
                     y++;
                     garden[x, y] = '>';
 
-                    return (garden, x, y, noGrass);
+                    break;
 
                 // Two radius move.
                 case 2:
-                    char[] way = new char[2] { 'y', 'y' };
-                    (garden, x, y) = moveCutter(garden, x, y, way, 0, 2);
+                    if (garden[x, y + 1] == '-')
+                    {
+                        char[] way = new char[2] { 'y', 'y' };
+                        (garden, x, y) = moveCutter(garden, x, y, way, 0, 2);
+                    }
+                    else if (garden[x - 1, y] == '-' && garden[x - 1, y - 1] == '-' && garden[x - 1, y - 2] == '-')
+                    {
+                        garden[x, y] = '-';
+                        x--;
+                        garden[x, y] = '^';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y++;
+                        garden[x, y] = '>';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y++;
+                        garden[x, y] = '>';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x++;
+                        garden[x, y] = 'V';
+                    }
+                    else if (garden[x + 1, y] == '-' && garden[x + 1, y - 1] == '-' && garden[x + 1, y - 2] == '-')
+                    {
+                        garden[x, y] = '-';
+                        x++;
+                        garden[x, y] = 'V';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y++;
+                        garden[x, y] = '<';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        y++;
+                        garden[x, y] = '<';
+                        GardenMap.drawGarden(garden);
+                        System.Threading.Thread.Sleep(150);
+                        garden[x, y] = '-';
+                        x--;
+                        garden[x, y] = '^';
+                    }
 
-                    return (garden, x, y, noGrass);
+                    break;
             }
 
             return (garden, x, y, noGrass);
@@ -158,18 +330,16 @@ namespace oopGrassCutter
             {
                 // One radius move.
                 case 1:
-                    Console.WriteLine("Right down 1 runs."); // Writes on the console that it found an uncut grass at the right down direction.
+                    Console.WriteLine("Right down 1 runs.");
                     System.Threading.Thread.Sleep(500);
 
                     length = 2;
 
-                    // Checks if theres a free way to the right.
                     if (CheckingEnvironment.checkRightGrass(garden, x, y, 1) || CheckingEnvironment.checkRightFinishedGrass(garden, x, y))
                     {
                         char[] way = new char[2] { 'y', 'x' };
                         (garden, x, y) = moveCutter(garden, x, y, way, 1, length);
                     }
-                    // If the right way is blocked then it will check the part down to the grass cutter. It should be clear.
                     else if (CheckingEnvironment.checkDownGrass(garden, x, y, 1) || CheckingEnvironment.checkDownFinishedGrass(garden, x, y))
                     {
                         char[] way = new char[2] { 'x', 'y' };
@@ -185,7 +355,6 @@ namespace oopGrassCutter
 
                     length = 4;
 
-                    // There are five different paths to reach the uncut grass at the top corner, if it finds one free path, it will call the mover function with the correct coordinate changeing order.
                     if (garden[x, y + 1] == '-' && garden[x, y + 2] == '-' && garden[x + 1, y + 2] == '-')
                     {
                         char[] way = new char[4] { 'y', 'y', 'x', 'x' };
@@ -216,7 +385,6 @@ namespace oopGrassCutter
                         char[] way = new char[4] { 'y', 'x', 'x', 'y' };
                         (garden, x, y) = moveCutter(garden, x, y, way, 1, length);
                     }
-                    // There are two more possible place for an uncut grass next to the top corner with three - three possible ways
                     else if (garden[x, y + 2] != 'X' && garden[x + 1, y + 2] == 'G')
                     {
                         length = 3;

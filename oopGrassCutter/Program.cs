@@ -10,9 +10,9 @@ namespace probamatrix
         {
             bool finished = false; // A boolean variable to decide if the grass cutter is finished or not.
 
-            GrassCutter cutter = new GrassCutter(1, 1, 0, 0, 1); // Object that represents the grass cutter.
-            GardenMap garden = new GardenMap(); // Object that represents the garden.
-            (cutter.x, cutter.y) = garden.fillGarden(); // Fills the garden with elements.
+            GrassCutter cutter = new GrassCutter(1, 1, 0, 0, 1);
+            GardenMap garden = new GardenMap();
+            (cutter.x, cutter.y) = garden.fillGarden();
 
             /* Legend:
              * G = uncut grass
@@ -49,8 +49,7 @@ namespace probamatrix
 
                 System.Threading.Thread.Sleep(500);
 
-                // If there were 5 forced route changes, then the grass cutter will stop suspecting that every uncut grass were cut already
-                // (can't find an uncut grass in a while).
+                // If there were 5 forced route changes, then the grass cutter will stop suspecting that every uncut grass were cut already.
                 if (cutter.routeChangeNumber == 5)
                 {
                     finished = true;
@@ -66,23 +65,22 @@ namespace probamatrix
             {
                 // Focus on left.
                 case 0:
-                    // First the grass cutter checks it's one area unit environment. If it can't find any uncut grass, it will check it's two area unit environment.
                     for (int i = 1; i < 3; i++)
                     {
                         // Down.
-                        if (CheckingEnvironment.checkDownGrass(garden, x, y, i)) // Checks the first prioritised path.
+                        if (CheckingEnvironment.checkDownGrass(garden, x, y, i))
                         {
-                            Console.WriteLine("Down " + i); // The program writes to the console the choosen path and it's radius.
+                            Console.WriteLine("Down " + i);
                             System.Threading.Thread.Sleep(150);
 
-                            (garden, x, y, noGrass) = MoveGrassCutter.moveDown(garden, x, y, noGrass, i); // Calling the right function to move the grass cutter to the right way.
+                            (garden, x, y, noGrass) = MoveGrassCutter.moveDown(garden, x, y, noGrass, i);
                             System.Threading.Thread.Sleep(150);
 
-                            didTask = true; // Variable, which tells that the grass cutter found uncut grass and a way to it.
-                            break; // Breaks the for iteration, no need to check with a higher radius this time.
+                            didTask = true;
+                            break;
                         }
                         // Left.
-                        else if (CheckingEnvironment.checkLeftGrass(garden, x, y, i)) // If the first prioritised path isn't appropriate, then it will check the second.
+                        else if (CheckingEnvironment.checkLeftGrass(garden, x, y, i))
                         {
                             Console.WriteLine("Left " + i);
                             System.Threading.Thread.Sleep(150);
@@ -168,7 +166,6 @@ namespace probamatrix
                         }
                     }
 
-                    // If the grass cutter can't find an uncut grass in it's two radius environment, then it will search for an already cut part (1 radius).
                     if (!didTask)
                     {
                         // Left.
@@ -303,7 +300,6 @@ namespace probamatrix
                         }
                     }
 
-                    // If the grass cutter can't find an uncut grass near it's position then it will search for an already cut part.
                     if (!didTask)
                     {
                         // Right.
@@ -437,7 +433,6 @@ namespace probamatrix
                         }
                     }
 
-                    // If the grass cutter can't find an uncut grass near it's position then it will search for an already cut part.
                     if (!didTask)
                     {
                         // Up.
@@ -570,7 +565,6 @@ namespace probamatrix
                         }
                     }
 
-                    // If the grass cutter can't find an uncut grass near it's position then it will search for an already cut part.
                     if (!didTask)
                     {
                         // Down.
